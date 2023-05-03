@@ -14,7 +14,7 @@ N/A
 
 ## Usage
 
-Click generate password to start. Then choose between the options in the pop-ups at the top. The options are ength, uppercase and/or lowercase, numbers, and special characters. Then your password will generate based on the parameters chosen.
+Click generate password to start. Then choose between the options in the pop-ups at the top. The options are length, uppercase and/or lowercase, numbers, and special characters. Then your password will generate based on the parameters chosen.
 
 ## Credits
 
