@@ -34,10 +34,10 @@ function generatePassword() {
     // step 2: 
 
     // prepare the selected set of characters
-    var uppercase = "ABCDE"
-    var lowercase = "abcde"
+    var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    var lowercase = "abcdefghijklmnopqrstuvwxyz"
     var numbers = "1234567890"
-    var special = "!@#$%"
+    var special = "!@#$%^&*()_++[]{}|"
 
     var selected = ""
 
