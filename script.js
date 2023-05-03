@@ -3,20 +3,20 @@
 var generateBtn = document.querySelector("#generate");
 var textArea = document.querySelector("#password");
 
-function generatePassword () {
+function generatePassword() {
 
     // step 1: get user input
     var passLength = prompt("What is the length of the password?")
-        // validate the passLenght - should be atleast 8, but no more than 128
-        if(passLength < 8) {
-            alert("Invalid length! Cannot be less than 8")
-            return;
-        }
+    // validate the passLenght - should be atleast 8, but no more than 128
+    if (passLength < 8) {
+        alert("Invalid length! Cannot be less than 8")
+        return;
+    }
 
-        if(passLength > 128) {
-            alert("Invalid length! Cannot be more than 128")
-            return;
-        }
+    if (passLength > 128) {
+        alert("Invalid length! Cannot be more than 128")
+        return;
+    }
 
     var includeUppercase = confirm("Do you want to include uppercase?")
     var includeLowercase = confirm("Do you want to include lowercase?")
@@ -25,35 +25,35 @@ function generatePassword () {
 
     var allIsFalse = !includeUppercase && !includeLowercase && !includeNumber && !includeSpecial
 
-        // validate if at least one of the include is true
-        if(allIsFalse) {
-            alert("Must at least include one character type!")
-            return;
-        }
+    // validate if at least one of the include is true
+    if (allIsFalse) {
+        alert("Must at least include one character type!")
+        return;
+    }
 
     // step 2: 
 
     // prepare the selected set of characters
     var uppercase = "ABCDE"
-    var lowercase= "abcde"
+    var lowercase = "abcde"
     var numbers = "1234567890"
     var special = "!@#$%"
 
     var selected = ""
 
-    if(includeUppercase) {
+    if (includeUppercase) {
         selected = selected + uppercase;
     }
 
-    if(includeLowercase) {
+    if (includeLowercase) {
         selected = selected + lowercase;
     }
 
-    if(includeNumber) {
+    if (includeNumber) {
         selected = selected + numbers
     }
 
-    if(includeSpecial) {
+    if (includeSpecial) {
         selected = selected + special;
     }
 
@@ -64,7 +64,7 @@ function generatePassword () {
 
     var password = ""
 
-    for(i = 0; i < passLength; i++) {
+    for (i = 0; i < passLength; i++) {
         var randomIndex = Math.floor(Math.random() * selected.length)
         var randomChar = selected.charAt(randomIndex)
         password = password + randomChar
