@@ -25,3 +25,5 @@ N/A
 Please refer to the license in the repo.
 
 ## Screenshots
+
+![Landing Page](./Images/Passwordgen-Screenshot.png)
